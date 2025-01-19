@@ -5,6 +5,8 @@
 # __init__.py
 from .string_ops import reverse_string, count_vowels, capitalize_words
 
+__all__ = ["reverse_string", "count_vowels", "capitalize_words", "hello_world"]
+
 def hello_world():
     reversed_text = reverse_string("Bonjour")
     vowel_count = count_vowels("Bonjour")
@@ -14,5 +16,3 @@ def hello_world():
            f"Reversed: {reversed_text}\n" \
            f"Vowel count: {vowel_count}\n" \
            f"Capitalized: {capitalized_text}"
-
-
