@@ -1,16 +1,17 @@
 
 
-# Importation des fonctions ou classes nécessaires depuis les modules du package
+
+# __init__.py
+
+# Importation des fonctions depuis string_ops
 from .string_ops import reverse_string, count_vowels, capitalize_words
 
-# Une fonction d'exemple pour démonstration
-def hello():
+# Fonction d'exemple pour les tests ou d'autres usages
+def hello_world():
     return "Bonjour depuis le package_creation_tutorial !"
 
-# Liste des éléments accessibles directement lorsque ce package est importé
-__all__ = [
-    "reverse_string",
-    "count_vowels",
-    "capitalize_words",
-    "hello",
-]
+# Utilisation des fonctions importées
+def example_usage():
+    print(reverse_string("Hello"))  # Utilisation de reverse_string
+    print(count_vowels("Hello"))    # Utilisation de count_vowels
+    print(capitalize_words("hello world"))  # Utilisation de capitalize_words
